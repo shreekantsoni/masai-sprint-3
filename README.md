@@ -2,17 +2,17 @@
 Covid - 19
 
 # Technologies Used
-Javascript
-Bootstrap
-CSS
-HTML
+1. Javascript
+2. Bootstrap
+3. CSS
+4. HTML
 
 
 # Functionality
-You can see live Covid Data in 4 Styles
+1. You can see live Covid Data in 4 Styles
 
 # Whole India live covid data.
 
-Covid Data state-wise.
-Covid Data in Chart.
-About Corona Virus, Symptoms, Prevention, Health.
+1. Covid Data state-wise.
+2. Covid Data in Chart.
+3. About Corona Virus, Symptoms, Prevention, Health.
