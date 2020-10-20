@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript XHR Login</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style type="text/css">
+      #gradient {
+        z-index: -1;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 99vw;
+        height: 99vh;
+        color: #fff;
+        background: linear-gradient(-45deg, transparent, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 200% 200%;
+        animation: Gradient 15s ease infinite;
+      }
+
+      @keyframes Gradient {
+        10% {
+          background-position: 10% 20%;
+        }
+        50% {
+          background-position: 60% 50%;
+        }
+        70% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 15px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: orange;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+        width: 97%;
+      }
+
+      .btn:hover {
+        background-color: #ff6600;
+      }
+
+      .btn:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="gradient"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 offset-4">
+          <div class="container m-4">
+            <h1 id="h2" class="text-light h4 mt-4">
+              <u> Covid-19 Webpage</u> <span class="fa w3-spin"><img src="images/corona.png" /> </span>
+            </h1>
+          </div>
+        </div>
+        <div class="offset-3 col-6 bg-light shadow-lg p-4 rounded">
+          <h2 class="text-center text-info">Sign-In now</h2>
+          <form>
+            <div class="form-group">
+              <label for="username">User Name</label><small class="text-danger">*</small>
+              <input type="text" placeholder="UserId" id="username" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label><small class="text-danger">*</small>
+              <input type="password" placeholder="password" id="password" class="form-control" />
+              <small id="log_error" class="form-text text-danger"></small>
+            </div>
+            <p><input type="checkbox" />&nbsp; Click Here For Stay Sign in</p>
+            <button type="button" class="btn" onclick="getInfo()"><b>Login</b></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>
